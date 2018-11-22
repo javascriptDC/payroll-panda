@@ -1,0 +1,50 @@
+@import "../../../../scss/variable";
+
+.help-box {
+  margin-top: 50px;
+
+  /deep/ .card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  /deep/ .btn-link {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .toggle {
+      color: $green;
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+
+    .toggle-open {
+      display: none;
+    }
+
+    .toggle-close {
+      display: inline-block;
+    }
+
+    &.collapsed {
+      .toggle-close {
+        display: none;
+      }
+
+      .toggle-open {
+        display: inline-block;
+      }
+    }
+  }
+
+  /deep/ .far {
+    float: left;
+    font-size: 6rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    color: gray("200");
+  }
+}

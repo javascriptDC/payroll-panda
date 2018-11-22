@@ -1,0 +1,31 @@
+<div class="players-wrapper">
+  <div class="container">
+    <h2>Bikers</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Full name</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">City</th>
+            <th scope="col">Ride in group</th>
+            <th scope="col">Days of the week</th>
+            <th scope="col">Registration day</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let player of players">
+            <td>{{ player.username }}</td>
+            <td>{{ player.email }}</td>
+            <td>{{ player.city }}</td>
+            <td>{{ player.ride }}</td>
+            <td>{{ player.days | daysOfWeek }}</td>
+            <td>{{ player.createdAt | date:'shortDate' }}<span>{{ player.createdAt | date:'shortTime' }}</span></td>
+            <td><i class="far fa-trash-alt" (click)="deletePlayer(player)"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+@import "../../../../scss/variable";
+
+.footer {
+  color: color('gray');
+  border-top: 2px solid color('gray');
+  font-size: 0.7rem;
+  padding-top: 10px;
+  height: 150px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .version {
+      font-weight: bold;
+    }
+  }
+}

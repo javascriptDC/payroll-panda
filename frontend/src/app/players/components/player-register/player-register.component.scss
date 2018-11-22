@@ -1,0 +1,100 @@
+@import "../../../../scss/variable";
+
+.user-registration {
+  margin-top: 80px;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 0.8rem;
+
+    &.has-error {
+      input.form-control {
+        border-color: theme-color("danger") !important;
+      }
+
+      .error-message {
+        text-align: right;
+        color: theme-color("danger");
+      }
+
+      .form-check-inline {
+        /deep/ label {
+          color: theme-color("danger");
+
+          .radio, .checkbox {
+            border-color: theme-color("danger");
+          }
+        }
+      }
+    }
+
+    .input-help-text {
+      display: flex;
+      justify-content: space-between;
+
+      .instruction-text,
+      .error-message {
+        font-size: 0.75rem;
+      }
+
+      .instruction-text {
+        color: gray(300);
+      }
+
+      .error-message {
+        margin-left: auto;
+      }
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 0.95rem;
+
+      &.form-group-title {
+        display: block;
+      }
+    }
+
+    .form-control {
+      border-width: 2px;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      border-color: gray("300");
+
+      &:focus {
+        border-color: $green;
+        box-shadow: none;
+      }
+    }
+
+    .form-check-inline {
+      margin-right: 1.75rem;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-left: 10px;
+      font-weight: bold;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      width: 80px;
+
+    }
+
+    &.days-of-week-wrapper {
+      margin-top: 40px;
+
+      .form-check-inline {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .submit {
+    margin-top: 65px;
+  }
+}

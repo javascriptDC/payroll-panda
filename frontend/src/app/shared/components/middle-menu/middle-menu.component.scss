@@ -1,0 +1,68 @@
+@import "../../../../scss/variable";
+
+.middle-menu {
+  background-color: $gray-200;
+  border-top: 1px solid grey;
+  padding: 25px 0;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .items, .item-responsability {
+      padding-left: 0;
+      margin-bottom: 0;
+
+      .item {
+        list-style: none;
+        display: inline-block;
+        margin: 5px 20px;
+
+        .item-container {
+          display: flex;
+          align-items: center;
+
+          .fas {
+            font-size: 2rem;
+            margin-right: 10px;
+          }
+
+          .item-name {
+            span {
+              display: block;
+
+              &.type {
+                font-size: 0.8rem;
+                color: color('gray');
+              }
+
+              &.name {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .items {
+      .fas {
+        color: color('gray');
+      }
+    }
+
+    .item-responsability {
+      .fas {
+        color: $green;
+      }
+
+      .item-name {
+        span {
+          &.name {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}

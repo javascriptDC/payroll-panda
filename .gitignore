@@ -1,0 +1,41 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# API Demo
+/API-demo/node_modules
+/API-demo/package-lock.json
+/API-demo/.vscode
+
+# Frontend
+/frontend/node_modules
+/frontend/package-lock.json
+/frontend/.vscode
+
+# Frontend e2e
+/frontend/e2e/*.js
+/frontend/e2e/*.map
+
+# compiled output
+/frontend/dist
+/frontend/tmp
+/frontend/out-tsc
+

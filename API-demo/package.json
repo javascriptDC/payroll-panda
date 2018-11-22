@@ -1,0 +1,22 @@
+{
+  "name": "apidemo-for-payrollpanda",
+  "version": "0.0.1",
+  "description": "API Demo for PayrollPanda",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "Han ChS",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "moment": "^2.20.1",
+    "mysql": "^2.15.0"
+  }
+}

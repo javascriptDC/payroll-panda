@@ -1,0 +1,62 @@
+@import "../../../../scss/variable";
+
+.players-wrapper {
+  margin-top: 40px;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  table {
+    font-size: 0.8rem;
+
+    thead {
+      background-color: $green;
+      color: white;
+
+      th {
+        border-bottom: 1px solid black;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+    }
+
+    tbody {
+      tr {
+        cursor: pointer;
+
+        &:nth-of-type(even) {
+          background-color: gray("300");
+        }
+
+        &:hover {
+          background-color: gray("500");
+
+          td {
+            .far {
+              display: block;
+            }
+          }
+        }
+
+        td {
+          border: none;
+          vertical-align: bottom;
+
+          &:last-child {
+            width: 54px;
+          }
+
+          span {
+            color: color('gray');
+          }
+
+          .far {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

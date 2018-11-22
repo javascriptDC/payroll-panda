@@ -1,0 +1,39 @@
+@import "../../../../scss/variable";
+
+.navbar {
+  border-bottom: 1px solid;
+
+  .navbar-toggler {
+    display: block;
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+
+    .fa-bars {
+      color: $green;
+    }
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .nav-item {
+    border-right: 1px solid;
+
+    &:last-child {
+      border: none;
+    }
+
+    .nav-link {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 1;
+
+      .fa-user {
+        color: $green;
+      }
+    }
+  }
+}

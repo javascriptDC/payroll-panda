@@ -1,0 +1,22 @@
+@import "../../../../scss/variable";
+
+:host {
+  .breadcrumb {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+
+    .breadcrumb-item + {
+      .breadcrumb-item {
+        &:before {
+          content: '>';
+        }
+      }
+    }
+
+    .breadcrumb-item a {
+      color: $green;
+    }
+  }
+}

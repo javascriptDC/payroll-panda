@@ -1,0 +1,12 @@
+<label [attr.for]="'day-' + dayOfWeek.toLowerCase()" class="form-check-label">
+  {{dayOfWeek}}
+  <input
+    [attr.id]="'day-' + dayOfWeek.toLowerCase()"
+    class="form-check-input"
+    type="checkbox"
+    [attr.name]="'day-' + dayOfWeek.toLowerCase()"
+    [checked]="checked"
+    (change)="check.emit(dayOfWeek)"
+  >
+  <span class="checkbox"></span>
+</label>
