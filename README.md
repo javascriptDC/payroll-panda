@@ -14,7 +14,7 @@ Node.js/Express.js backend, JavaScript/Angular v7 frontend.
 * Angular v7
 
 ## Install
-1. Fclone this repo - https://github.com/javascriptDC/payroll-panda
+1. clone this repo - https://github.com/javascriptDC/payroll-panda
 2. Navigate to API-demo, complete backend setup
 3. In a separate terminal window, navigate to frontend, complete frontend setup
 
